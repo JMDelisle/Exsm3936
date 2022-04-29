@@ -1,0 +1,12 @@
+
+input {
+    text-align: center;
+    padding: 5px 0;
+    width: 275px;
+    border: 1px solid rgb(0, 110, 255);
+    text-shadow: 0 2px 3px rgb(142, 138, 158);
+}
+
+#search {
+    border-radius: 5px;
+}
