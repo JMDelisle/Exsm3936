@@ -1,10 +1,10 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,macos,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,windows,macos,linux
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,visualstudiocode
 
 ### Linux ###
 *~
-
+debug.log
 # temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
 
@@ -46,6 +46,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -66,6 +70,10 @@ Temporary Items
 .ionide
 
 # Support for Project snippet scope
+.vscode/*.code-snippets
+
+# Ignore code-workspaces
+*.code-workspace
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -93,4 +101,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,windows,macos,linux
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,visualstudiocode
