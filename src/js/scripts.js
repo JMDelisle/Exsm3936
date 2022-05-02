@@ -46,7 +46,10 @@ button.addEventListener("click", e => {
                 paragraph.style.color = "white";
             }
         
-        }).finally(() => {
-            paragraph.innterText += "Request complete."
         })
+        .finally(() => {
+            console.log("Finally")
+                  })
+
+
 });
