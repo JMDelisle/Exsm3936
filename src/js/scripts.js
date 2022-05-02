@@ -2,8 +2,6 @@ const paragraph = document.querySelector("#characterInfo");
 const button = document.querySelector("#fetch");
 const search = document.querySelector("#search");
 
-
-
 button.addEventListener("click", e => {
     e.preventDefault;
     
@@ -15,12 +13,12 @@ button.addEventListener("click", e => {
             if (response.ok) {
                 return response.json();
             } 
-            else if  ((pokemonSearch.length) > 10) {
-                paragraph.innerText = "Pokemon name is too long, choose a maxium of 11 character!";
-            }
             else if ((pokemonSearch.length) < 1) {
                 paragraph.innerText = "You must enter a name!";
                 paragraph.style.color = "white";
+            }
+            else if  ((pokemonSearch.length) > 10) {
+                paragraph.innerText = "Pokemon name is too long, choose a maxium of 11 character!";
             }
             else if (pokemonSearch.match("^[a-zA-Z-]*$"))
             paragraph.style.color = "white";
