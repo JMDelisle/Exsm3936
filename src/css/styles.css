@@ -24,8 +24,7 @@ input {
 body
 {
   height:100vh;
-  background: linear-gradient(to right, #2d6ce2, #4a00e0);
-  
+  background: linear-gradient(to right, #2d6ce2, #0050c1);
   display:flex;
   align-items:center;
   justify-content:center;
@@ -54,8 +53,8 @@ button
 
 button:nth-of-type(1)
 {
- background-color:transparent;
- border: 2px solid #ec1111;
+ background-color:solid;
+ border: 5px solid #ec1111;
  z-index:1;
   
  transition:color .4s ease-in-out , border .4s ease-in-out .6s;
